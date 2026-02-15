@@ -210,6 +210,10 @@ a.link-button .label {
   background-size: cover;
 }
 
+
+
+/*  */
+/*  */
 /* minha tentativa de fazer responsivo no celular*/
 @media (max-width: 1250px) {
   .s-wrapper .s-main-content__top {
