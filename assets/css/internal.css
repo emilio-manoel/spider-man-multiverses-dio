@@ -27,15 +27,6 @@
   padding-left: 130px;
 }
 
-@media (max-width: 816px) {
-  .s-wrapper .s-left-column {
-    width: 65px;
-  }
-  .s-wrapper .s-main-content {
-    padding-left: 85px;
-  }
-}
-
 nav {
   height: 80vh;
   display: flex;
@@ -113,18 +104,6 @@ nav .navigation__icon {
   margin-bottom: 30px;
 }
 
-@media (max-width: 1210px) {
-  .s-wrapper .s-main-content .s-logo img {
-    height: 5vh;
-  }
-}
-
-@media (max-width: 816px) {
-  .s-wrapper .s-main-content .s-logo img {
-    height: 1.9vh;
-  }
-}
-
 .pills ul {
   display: flex;
   flex-direction: row;
@@ -151,13 +130,6 @@ nav .navigation__icon {
   border-radius: 10px;
 }
 
-@media (max-width: 816px) {
-  .s-wrapper .s-main-content__top .s-description {
-    max-width: 75%;
-    font-size: 11px;
-  }
-}
-
 .s-wrapper .s-main-content__top .s-description {
   color: #fff;
   line-height: 170%;
@@ -167,14 +139,14 @@ nav .navigation__icon {
   margin-bottom: 20px;
 }
 
-a.link-button{
+a.link-button {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
-a.link-button .icon{
+a.link-button .icon {
   width: 32px;
   height: 32px;
   padding: 3px;
@@ -188,9 +160,9 @@ a.link-button .icon{
   justify-content: center;
 }
 
-a.link-button .icon .play-icon{
-  border:solid 7px white;
-  width:0;
+a.link-button .icon .play-icon {
+  border: solid 7px white;
+  width: 0;
   height: 0;
   border-top-color: transparent;
   border-right-color: transparent;
@@ -198,11 +170,144 @@ a.link-button .icon .play-icon{
   margin-right: -7px;
 }
 
-a.link-button .label{
+a.link-button .label {
   margin-left: 10px;
 }
 
-.s-wrapper .s-main-content .s-links{
+.s-wrapper .s-main-content .s-links {
   padding: 20px;
   padding-left: 0;
+}
+
+.gallery {
+  padding: 20px;
+  padding-left: 0;
+}
+
+.gallery ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery ul li {
+  margin-left: 25px;
+}
+
+.gallery ul li:first-child {
+  margin-left: 0;
+}
+
+.gallery ul li a img {
+  border: solid 6px #fff;
+  border-radius: 15px;
+}
+
+.gallery-nav {
+  display: none;
+}
+.s-spiderman-01-01 {
+  background-image: url(../images/spiderman-tobey/movie-01/background.png);
+  background-size: cover;
+}
+
+/* minha tentativa de fazer responsivo no celular*/
+@media (max-width: 1250px) {
+  .s-wrapper .s-main-content__top {
+    height: 72vh;
+  }
+  .gallery {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .gallery ul {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .gallery ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery ul li {
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery ul li a img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery-nav {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .gallery-nav.prev {
+    left: 10px;
+  }
+
+  .gallery-nav.next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .s-wrapper .s-main-content .s-logo img {
+    height: 5vh;
+  }
+}
+
+@media (max-width: 816px) {
+  .s-wrapper .s-main-content__top .s-description {
+    max-width: 75%;
+    font-size: 11px;
+  }
+  .s-wrapper .s-main-content .s-logo img {
+    height: 1.9vh;
+  }
+  .s-wrapper .s-left-column {
+    width: 65px;
+  }
+  .s-wrapper .s-main-content {
+    padding-left: 85px;
+  }
+  .gallery ul li a {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery ul li a img {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 472px) {
+  * {
+    font-size: 12px;
+  }
 }
