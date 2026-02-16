@@ -235,9 +235,6 @@ a.link-button .label {
   background-image: url(../images/spiderman-andrew/movie-02/background.jpg);
   background-size: cover;
 }
-
-
-
 /*  */
 /*  */
 /* minha tentativa de fazer responsivo no celular*/
@@ -306,11 +303,11 @@ a.link-button .label {
   }
 }
 
-@media (max-width: 1210px) {
+
   .s-wrapper .s-main-content .s-logo img {
-    height: 5vh;
+    height: 6vh;
   }
-}
+
 
 @media (max-width: 816px) {
   .s-wrapper .s-main-content__top .s-description {
