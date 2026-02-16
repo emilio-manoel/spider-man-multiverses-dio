@@ -192,6 +192,8 @@ a.link-button .label {
 }
 
 .gallery ul li a img {
+  height: 150px ;
+  width: 250px;
   border: solid 6px #fff;
   border-radius: 15px;
 }
@@ -230,7 +232,7 @@ a.link-button .label {
   background-size: cover;
 }
 .s-spiderman-03-02 {
-  background-image: url(../images/spiderman-andrew/movie-02/background.png);
+  background-image: url(../images/spiderman-andrew/movie-02/background.jpg);
   background-size: cover;
 }
 
@@ -316,7 +318,7 @@ a.link-button .label {
     font-size: 11px;
   }
   .s-wrapper .s-main-content .s-logo img {
-    height: 1.9vh;
+    height: 2.4vh;
   }
   .s-wrapper .s-left-column {
     width: 65px;
