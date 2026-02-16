@@ -37,6 +37,11 @@ body::before {
   vertical-align: middle;
 }
 
+.s-menu__icon img {
+  height: 58px;
+  width: 58px;
+}
+
 .s-container {
   position: relative;
   display: flex;
